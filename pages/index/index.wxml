@@ -1,0 +1,123 @@
+<!--index.wxml-->
+<view class="container">
+ <!--菜单-->
+  <view class="nav">
+      <view class="v-list">
+          <view class="v-list-i">
+            <view class="n-image n-1 active-img"  ></view>
+            <text class="v-name  active-text">精选</text>
+          </view>
+          <view class="v-list-i">
+             <view class="n-image n-2"  ></view>
+            <text class="v-name">数码</text>
+          </view>
+          <view class="v-list-i">
+              <view class="n-image n-3"  ></view>
+            <text class="v-name">服饰</text>
+          </view>
+          <view class="v-list-i">
+             <view class="n-image n-4"  ></view>
+            <text class="v-name">美妆</text>
+          </view>
+          <view class="v-list-i">
+             <view class="n-image n-5"  ></view>
+            <text class="v-name">保健</text>
+          </view>
+          <view class="v-list-i">
+              <view class="n-image n-6"  ></view>
+            <text class="v-name">母婴</text>
+          </view>
+      </view>
+      <view class="v-menu">
+         <image bindtap="menuHandler" class="v-image" src="data:image/png;base64,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" />
+      </view>
+  </view>
+  <!--轮播图的设置-->
+  <view class="s-wrap">
+      <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="p-swiper">
+        <block wx:for="{{imgUrls}}">
+          <swiper-item>
+            <image src="{{item}}" class="slide-image" />
+          </swiper-item>
+        </block>
+      </swiper>
+</view>
+<!--精品推荐-->
+ <view class="topic-list">
+    <view class="topic t-left">
+       <view class="t-title">
+          <view class="m-title">
+             <image class="m-t-img" src="https://img.alicdn.com/tps/i4/TB1huCRLpXXXXXcXFXXwu0bFXXX.png_150x150Q30s50.jpg_.webp" />
+          </view>
+          <view class="s-title">
+           <image class="s-t-img" src="https://img.alicdn.com/tps/tps/i2/TB1PUkjGVXXXXXTXpXXTSel1FXX-960-640.png_36x36Q30s50.jpg_.webp" />
+           <text class="s-text">持久保湿补水</text>
+          </view>          
+       </view>
+       <view  class="topic-img-w">
+          <image class="topic-img" src="https://img.alicdn.com/tps/i4/173230287949257577/TB2.AnnX0HC11BjSszeXXbZppXa_!!0-juitemmedia.jpg_310x310Q30s50.jpg_.webp" />
+         <view class="price-top t-show">
+            <text class="price">79元</text>
+            <text class="text">限时抢</text>
+         </view>
+         <view class="buy-bar">
+            <text class="n-text num">1850</text>
+            <text class="n-text buy">件已售</text>
+         </view>
+       </view>
+    </view>
+    <view class="topic t-right">
+      <view class="t-item t-item-top">
+        <image class="topic-img" src="https://img.alicdn.com/imgextra/i1/5/TB2WzplXPfyQeBjy0FpXXcXCFXa_!!5-0-yamato.jpg_400x400Q30s50.jpg_.webp"/>
+      </view>
+      <view class="t-item">
+          <image class="topic-img" src="https://img.alicdn.com/tps/i4/TB1MqBDNFXXXXbKXpXXwu0bFXXX.png_400x400Q30s50.jpg_.webp"/>
+      </view>     
+    </view>
+ </view>
+<view class="types-list">
+  <view class="types-title">
+    <view class="t-name">
+       <image class="img-name" src="data:image/png;base64,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" />
+       <text class="name-text">国际新发现</text>
+    </view>
+    <view class="t-link">
+      <text class="l-text">显示全部</text>
+      <image src="https://img.alicdn.com/tps/TB1Mj0zKpXXXXXFXVXXXXXXXXXX-10-18.png_20x20Q30s50.jpg_.webp" class="l-img" />
+    </view>    
+  </view>
+  <view class="type-list">
+   <view class="type">
+     <image  src="https://img.alicdn.com/tps/TB1kGVgNFXXXXbNXpXXSutbFXXX.jpg_720x720Q30s50.jpg_.webp" class="type-banner" />
+     <view class="desc-wrap">
+        <text class="h1-text">商务人士不能缺一个长款钱包</text>
+        <text class="h3-text">一个长款钱包解决所有</text>
+        <view class="left-arrow"></view>
+     </view>
+   </view>
+   <view class="type">
+     <image  src="//img.alicdn.com/tps/TB2DzV_XcIa61Bjy1zeXXX7wXXa_!!2842422587.png_720x720Q30s50.jpg_.webp" class="type-banner" />
+     <view class="desc-wrap">
+        <text class="h1-text">国庆出游“包”你满意</text>
+        <text class="h3-text">增加你的回头率</text>
+         <view class="left-arrow"></view>
+     </view>
+   </view>
+   <view class="type">
+     <image  src="//img.alicdn.com/tps/TB1.B.iNpXXXXctXVXXSutbFXXX.jpg_720x720Q30s50.jpg_.webp" class="type-banner" />
+     <view class="desc-wrap">
+        <text class="h1-text">玫瑰-女生的养颜神器</text>
+        <text class="h3-text">让你的美由内而外</text>
+         <view class="left-arrow"></view>
+     </view>
+   </view>
+   <view class="more-type">
+     <text class="l-text">更多精彩专辑 </text>
+   </view>
+  </view>
+</view>
+</view>
+<modal class="modal" hidden="{{modalHidden2}}" no-cancel bindconfirm="modalChange2">
+  <view>暂时还没有菜单设置</view>
+</modal>

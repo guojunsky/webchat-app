@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "天猫国际",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+     "color":"#777",
+     "selectedColor":"#7A45E5",
+     "backgroundColor":"#fff",
+     "borderStyle":"white",
+     "list":[
+        {
+              "pagePath":"pages/index/index",
+              "text":"天猫国际",
+              "iconPath":"images/icon_bottomtag_home_n@2x.png",
+              "selectedIconPath":"images/icon_bottomtag_home_s@2x.png"
+        },
+        {
+              "pagePath":"pages/index/index",
+              "text":"购物中心",
+              "iconPath":"images/icon_bottomtag_market_n@2x.png",
+              "selectedIconPath":"images/icon_bottomtag_market_s.png"
+        },
+         {
+              "pagePath":"pages/index/index",
+              "text":"购物车",
+              "iconPath":"images/icon_bottomtag_cart_n@2x.png",
+              "selectedIconPath":"images/icon_bottomtag_cart_s.png"
+        },
+         {
+              "pagePath":"pages/index/index",
+              "text":"个人中心",
+              "iconPath":"images/icon_bottomtag_me_n@2x.png",
+              "selectedIconPath":"images/icon_bottomtag_me_s.png"
+        }
+     ]
+  }
+}

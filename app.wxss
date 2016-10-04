@@ -1,0 +1,15 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  align-items: center;
+  box-sizing: border-box;
+  border-bottom:thin solid #ddd;
+  overflow: auto;
+  padding-bottom: 20rpx;
+  background-color: #eee;
+} 
+img{
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
+}
